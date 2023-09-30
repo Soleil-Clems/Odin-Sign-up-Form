@@ -7,5 +7,211 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+#left{
+    width: 40%;
+    background: url('../asset/halie-west-25xggax4bSA-unsplash.jpg') no-repeat;
+    background-size:cover;
+    height: 100%;
+    color: white;
+}
+
+#banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 150px;
+    align-items: center;
+    padding-block: 1.5em;
+    margin-top: 8em;
+    position: relative;
+}
+
+.img-div-banner{
+    height: 100%;
+    width: 90px;
+    object-fit: cover;
+    
+}
+
+.img-div-banner img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.odin-text{
+    font-family: Norse-Bold;
+    font-size: 6em;
+
+}
+
+.footer-div{
+    position: absolute;
+    bottom: 0;
+    font-size: 13px;
+    width: 100%;
+    padding: .5em;
+}
+
+.footer p:hover{
+    color: orange;
+}
+
+.line{
+    text-decoration: underline;
+}
+
+
+h1{
+    font-size: 19px;
+}
+
+#right{
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+}
+
+.long-text{
+        font-weight: bold;
+        width: 64%;
+}
+
+.space{
+    margin-top: 1em;
+}
+
+.form-div{
+    margin-top: 3.5em;
+}
+
+.inner-form-block{
+    display: flex;
+}
+
+.barre{
+    display: block;
+    width: 100%;
+    background:rgba(229, 231, 235, .4);
+    height: 1px;
+}
+
+.end{
+    background:rgba(229, 231, 235, 1);
+    margin-top: 1em;
+    box-shadow: 1px 1px 2px #596D48;
+}
+
+.inner-form-block div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2em;
+}
+
+label{
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-block: .5em;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    border:1px solid #E5E7EB;
+}
+
+input[type="button"]{
+    background: #596D48;
+    font-weight: 600;
+    border-radius: 5px;
+    color: white;
+    padding: .5em 1em;
+    margin-block: 1.5em;
+}
+
+.already{
+    font-weight: 600;
+    margin-top: .5em;
+}
+
+.green{
+    color:#596D48;
+}
+
+
+
+@media (max-width: 850px) {
+    main{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #left{
+        width: 100%;
+        min-height: 300px;
+    }
+
+    #banner{
+        width: 100%;
+        height: 160px;
+        padding-block: 1.5em;
+        margin-block: 3em;
+        position: relative;
+    }
+    
+    .img-div-banner{
+        align-items: center;
+        height: 76%;
+        width: 80px;
+        object-fit: cover;
+        
+    }
+
+
+    .odin-text{
+        font-family: Norse-Bold;
+        font-size: 6em;
+    
+    }
+    
+    .footer-div{
+        position: relative;
+        font-size: 13px;
+        width: 100%;
+        padding: .5em;
+    }
+
+    .footer{
+        display: flex;
+        column-gap: 1em;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #right{
+        width: 100%;
+    }
+    
+    .long-text{
+            width: 100%;
+    }
 }
